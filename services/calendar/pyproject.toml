@@ -1,0 +1,17 @@
+[project]
+name = "calendar"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+	"common",
+	"fastapi[standard]>=0.136.1",
+	"sqlalchemy[asyncio]>=2.0.0",
+	"asyncpg>=0.30.0",
+	"alembic>=1.14.0",
+	"aio-pika>=9.4.0",
+	"pydantic>=2.0.0",
+	"pydantic-settings>=2.0.0",
+]
+
+[tool.uv.sources]
+common = {workspace = true}
